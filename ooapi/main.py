@@ -69,12 +69,12 @@ def start_service():
 
 
 
-
+    #TODO
     #configuration for server
     conf = {
             'global' : {
-                    'server.socket_host' : 'student04.cse.nd.edu',
-                    'server.socket_port' : 52052,
+                    'server.socket_host' : 'YOUR-DOMAIN',
+                    'server.socket_port' : YOUR-PORT,
                 },
             '/' : { 'request.dispatch' : dispatcher,
 		    'tools.CORS.on': True,
