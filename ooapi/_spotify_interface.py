@@ -11,7 +11,8 @@ class _spotify_interface:
 
 	def get_auth_token(self):	
 		body = {"grant_type" : "client_credentials"}
-		posthead = {"Content-Type" : "application/x-www-form-urlencoded", "Authorization" : "Basic M2M5ZTk3YzFiNDlmNDAwOGI0Y2EzMDFhODQ5ODIxMjA6M2Y0YjdlMmE5ZjAwNDAxYjgyZTYyNDg1YmNkMWUyM2I="}
+		#TODO: PUT YOUR SPOTIFY TOKEN HERE
+		posthead = {"Content-Type" : "application/x-www-form-urlencoded", "Authorization" : "Basic TOKEN-HERE"}
 		r = requests.post("https://accounts.spotify.com/api/token",data=body,headers=posthead)
 		auth = json.loads(r.content.decode())
 		token = auth['access_token']
