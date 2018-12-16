@@ -1,0 +1,34 @@
+QMainWindow {
+   background-image: url(./images/gradient.jpg);
+}
+
+QLineEdit {
+   background-color: aliceblue;
+   color: #618b38;
+   font-style: italic;
+   font-weight: bold;
+}
+
+QLabel {
+   background-color: transparent;
+   color: black;
+   font-size: 12px; 
+}
+
+QPushButton {
+   background-color: #8b0000;
+   color: #ffffff;
+   border-radius: 5px;
+   border-style: none;
+   height: 25px;
+}
+
+QAction {
+   background-color: white;
+   color: black;
+}
+
+QMessageBox {
+   background-color: aliceblue;
+   color: black;
+}
